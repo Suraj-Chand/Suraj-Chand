@@ -1,0 +1,33 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BTMS1"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="BTMS1.MainWindow"
+        mc:Ignorable="d"
+        Title="Bus Ticket Management System" Height="490.8" Width="830" WindowStartupLocation="CenterScreen" VerticalAlignment="Center" UseLayoutRounding="True" TextOptions.TextHintingMode="Animated" WindowStyle="ThreeDBorderWindow" BorderThickness="2" FontFamily="Times New Roman" FontWeight="Medium" Icon="bus.png" ResizeMode="NoResize">
+    <Window.ContextMenu>
+        <ContextMenu FontSize="122"/>
+    </Window.ContextMenu>
+
+    <Grid Margin="-3,0,-68.4,-46" Background="#FF00C000" Focusable="True" UseLayoutRounding="True" SnapsToDevicePixels="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="184*"/>
+            <ColumnDefinition Width="390*"/>
+            <ColumnDefinition Width="157*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Bus Ticket&#xA;Management&#xA;System" HorizontalAlignment="Left" Margin="25,251,0,0" VerticalAlignment="Top" Width="228" Height="170" FontFamily="Times New Roman" FontSize="32" FontWeight="ExtraBold" Grid.ColumnSpan="2" Focusable="True" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Image Margin="28,18,84.8,259.6" Source="bus.png" Stretch="Fill" VerticalAlignment="Top" Height="214" Grid.ColumnSpan="4" Focusable="True" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Label Content="User Name:-" HorizontalAlignment="Left" Margin="136.6,246,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2" Focusable="True" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Label x:Name="passwordtex" Content="Password:-" HorizontalAlignment="Left" Margin="136.6,296,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2" Focusable="True" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <TextBox x:Name="passwordtxtbox" Height="34" Margin="47.6,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414" Grid.ColumnSpan="2" Grid.Column="2" Text="Enter Password Here" RenderTransformOrigin="0.485,-1.194" HorizontalAlignment="Left" VerticalContentAlignment="Center" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Button x:Name="loginbtn" Content="Login" HorizontalAlignment="Left" Margin="47.6,352,0,0" VerticalAlignment="Top" Width="120" Height="37" FontFamily="Times New Roman" FontWeight="Bold" FontSize="17" Background="#FF189D2C" Click="Button_Click_3" ClickMode="Press" Grid.Column="2" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Button x:Name="exitbtn" Content="Exit" HorizontalAlignment="Left" Margin="341.6,352,0,0" VerticalAlignment="Top" Width="120" Height="37" FontFamily="Times New Roman" FontWeight="Bold" FontSize="17" Background="#FF189D2C" Click="Button_Click" ClickMode="Press" Grid.ColumnSpan="2" Grid.Column="2" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Button x:Name="resetbtn" Content="Reset" HorizontalAlignment="Left" Margin="193.6,352,0,0" VerticalAlignment="Top" Width="120" Height="37" FontFamily="Times New Roman" FontWeight="Bold" FontSize="17" Background="#FF189D2C" Click="Button_Click_4" ClickMode="Press" Grid.Column="2" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <Button x:Name="forgetpasswordbtn" Content="Forgot Password?" HorizontalAlignment="Left" Margin="50.6,411,0,0" VerticalAlignment="Top" Width="103" Height="20" Background="#FF0E8B14" ClickMode="Press" FontWeight="Medium" TextOptions.TextFormattingMode="Display" FontFamily="Times New Roman" Click="Button_Click_5" Grid.Column="2" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+        <TextBox x:Name="usernametxtbox" Grid.Column="2" Height="33" Margin="47.6,245,0,0" TextWrapping="Wrap" Text="Enter User Name Here" VerticalAlignment="Top" Width="412" RenderTransformOrigin="0.433,2.139" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalContentAlignment="Center" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+
+    </Grid>
+</Window>
